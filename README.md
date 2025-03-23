@@ -41,8 +41,8 @@ SETUP Steps
 11. Create the following scheduled task to run daily (at a time where the email will be noticed. e.g. 10:00am)
 	a) Under the Actions Tab: Start a Program: Have the Task open the batch file you created.
 	b) Ensure the Start in (option) field has the folder location of your powershell script (this is where 
-	b) ensure the task runs whether the user is logged on or not
-	c) ensure a service account or local service user is used
-	d) ensure the task runs with highest privileges
+	c) ensure the task runs whether the user is logged on or not
+	d) ensure a service account or local service user is used
+	e) ensure the task runs with highest privileges
 
 TIP: You will need a Batch file and .PS1 script for each vCenter you have.
