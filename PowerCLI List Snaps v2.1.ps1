@@ -1,4 +1,4 @@
-# Author: Chris Fryer - Atturra
+# Author: Chris Fryer
 # IMPORTANT: An instance of this script should be ran against each vCenter in your environment.
 #
 # Make sure VMware PowerCLI is installed. If not, run:
