@@ -16,12 +16,12 @@ SETUP Steps
 2. Identify the Windows Server you want to schedule the script/s to run from, create a new folder and place the script file in (this will be your working directory).
 3. Run the following PowerShell command from the folder you created: >$securePassword = Read-Host -AsSecureString "Enter your vCenter password"
 *Enter the password for the user you created that can access the Virtual Center/s
-4. Now run the this >$securePassword | ConvertFrom-SecureString | Out-File "vcenter_encrypted.txt"
+4. Now run this >$securePassword | ConvertFrom-SecureString | Out-File "vcenter_encrypted.txt"
 *This will create a file in your working folder (with the script) that encrypts the password for you to call and decrypt when running the script.
 5. *For Authenticated Email* Create a user in AD / Exchange and record username/password (for sending emails) - note: An alias email address should be assigned that makes sense for notifications e.g. noreply@YOUR-DOMAIN.COM
 6. Run the following PowerShell command from the folder you created: >$securePassword = Read-Host -AsSecureString "Enter your Email Account password"
 *Enter the password for the user you created that can send emails from your email server.
-7. Now run the this >$securePassword | ConvertFrom-SecureString | Out-File "email_encrypted.txt"
+7. Now run this >$securePassword | ConvertFrom-SecureString | Out-File "email_encrypted.txt"
 *This will create a file in your working folder (with the script) that encrypts the password for you to call and decrypt when running the script.
 8. Edit the .PS1 script file and update it with your details:
 	a)  $vCenterServer = "IP Address or Hostname HERE"
